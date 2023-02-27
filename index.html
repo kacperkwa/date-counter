@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Date calculator</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/main.css">
+   <script src="https://kit.fontawesome.com/be3eced35c.js" crossorigin="anonymous"></script>
+   <script src="js/app.js" defer></script>
+</head>
+
+<body>
+   <div class="counter-app">
+      <div class="settings">
+         <h1>settings</h1>
+         <label for="event-name">Event name:</label>
+         <input type="text" id="event-name" value="New Year">
+         <table class="date">
+            <tr>
+               <td><label for="event-day"></label>Day:</td>
+               <td><label for="event-month"></label>Month:</td>
+               <td><label for="event-year"></label>Year:</td>
+            </tr>
+            <tr>
+               <td><input type="number" id="event-day" min="1" max="31" value="1"></td>
+               <td><input type="number" id="event-month" min="1" max="12" value="1"></td>
+               <td><input type="number" id="event-year" min="2023" max="9999" value="2024"></td>
+            </tr>
+         </table>
+         <label for="event-image">Link to image source:</label>
+         <input type="text" id="event-image" value="default.jpg">
+         <button class="save">Save</button>
+      </div>
+      <div class="app-body">
+         <div class="image-section">
+            <div class="settings-btn"><i class="fas fa-sliders-h"></i></div>
+         </div>
+         <div class="time-section">
+            <h3><span class="event">New Year</span> in:</h3>
+            <div class="time-cards">
+               <div class="card">
+                  <p class="days-count number">1</p>
+                  <p class="card-title">Days</p>
+               </div>
+               <div class="card">
+                  <p class="hours-count number">1</p>
+                  <p class="card-title">Hours</p>
+               </div>
+               <div class="card">
+                  <p class="minutes-count number">1</p>
+                  <p class="card-title">Minutes</p>
+               </div>
+               <div class="card">
+                  <p class="seconds-count number">1</p>
+                  <p class="card-title">Seconds</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+
+</html>
